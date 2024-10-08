@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.card-img-overlay{
+    background: rgba(0, 0, 0, 0.589);
+}
+.form{
+    top: 0;
+
+}
+/* ------------ helper classes ------------- */
+.transition{
+    transition: 0.3s !important;
+}
+
+.bg-gray{
+    background: rgba(88, 87, 87, 0.203);
+}
+.text-gray{
+    color: gray;
+}
+.btn-color{
+    background: #785039;
+}
+.text-brown{
+    color: #785039;
+}
+.text-blue{
+    color: #1f1c26 !important   ;
+}
+.bg-nav-color{
+    background: #9cbcc4;
+}
+.text-color{
+    color: #ccd5d7;
+}
+.text-orange{
+    color: orange !important;
+}
+.fs-l{
+    font-size: 120px;
+}
+.box-shadow {
+    box-shadow:  0.3rem .3rem .3rem .3rem  rgba(0, 0, 0, 0.15);
+}
+hr{
+    width: 70px;
+    height: 5px;
+    background: #675C66;
+}
+/* ---------------- class List for JS ------------ */
+.display-block{
+    display: block !important;
+}
