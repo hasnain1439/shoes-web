@@ -8,7 +8,12 @@
 }
 .form{
     top: 0;
-
+}
+#Products img:hover{
+    transform: scale(1.05);
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 /* ------------ helper classes ------------- */
 .transition{
