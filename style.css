@@ -47,6 +47,9 @@
 .fs-l{
     font-size: 120px;
 }
+.fs-7{
+    font-size: 14px !important;
+}
 .box-shadow {
     box-shadow:  0.3rem .3rem .3rem .3rem  rgba(0, 0, 0, 0.15);
 }
@@ -55,7 +58,16 @@ hr{
     height: 5px;
     background: #675C66;
 }
+.bg-blue{
+    background: #47B2E4;
+}
 /* ---------------- class List for JS ------------ */
 .display-block{
     display: block !important;
+}
+textarea{
+    height: 200px;
+}
+.align{
+    align-items: stretch !important;
 }

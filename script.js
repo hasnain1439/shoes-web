@@ -60,24 +60,6 @@ if (discountBtn) {
   });
 }
 
-// function toggleFunction(btnId, contentId) {
-//   let btn = document.getElementById(btnId);
-//   let content = document.getElementById(contentId);
-
-//   btn.addEventListener("click", function () {
-//     btn.classList.toggle("yes");
-//     if (btn.classList.contains("yes")) {
-//       content.classList.remove("d-none");
-//       content.classList.add("d-block");
-//     } else {
-//       content.classList.remove("d-block");
-//       content.classList.add("d-none");
-//     }
-//   });
-// // }
-// toggleFunction("btn-read-more", "read-more");
-// toggleFunction("discount-btn", "discount-read-more");
-
 // --------------------- login page ---------------
 let signInEmail = document.getElementById("sign-email");
 let signInPassword = document.getElementById("sign-password");
