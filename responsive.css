@@ -1,0 +1,25 @@
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .fs-l{
+        font-size: 80px;
+    }
+}
+@media screen and (min-width:486px) and (max-width: 768px) {
+    .fs-l{
+        font-size: 60px;
+    }
+    p{
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width: 280px) and (max-width:486px){
+    .fs-l{
+        font-size: 40px !important;
+        margin-top: 15%;
+    }
+    p{
+        font-size: 10px !important;
+    }
+    .fs-8{
+        font-size: 8px !important;
+    }
+} 
