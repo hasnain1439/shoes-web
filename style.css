@@ -10,10 +10,10 @@
     top: 0;
 }
 #Products img:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 /* ------------ helper classes ------------- */
 .transition{

@@ -60,6 +60,10 @@ if (discountBtn) {
   });
 }
 
+
+
+
+
 // --------------------- login page ---------------
 let signInEmail = document.getElementById("sign-email");
 let signInPassword = document.getElementById("sign-password");
@@ -110,38 +114,21 @@ if (loginAccount) {
 
 if (signUpBtn) {
   signUpBtn.addEventListener("click", function () {
+    let passwordTest = signUpPassword.value;
     if (signUpPassword.value === signUpConfirmPassword.value) {
-      let inputValue = signUpPassword.value;
-      let testSmallLetter = /[a-z]/.test(inputValue);
-      let testCapitalLetter = /[A-Z]/.test(inputValue);
-      let testNumber = /[0-9]/.test(inputValue);
-      let testSpacialChar = /[?=.*@<>$&#]/.test(inputValue);
-      if (testSmallLetter !== true) {
-        alert("you password have not contain small letter");
-      } else if (testCapitalLetter !== true) {
-        alert("you password have not contain captital letter");
-      } else if (testNumber !== true) {
-        alert("you password have not contain number");
-      } else if (testSpacialChar !== true) {
-        alert("you password have not contain special character");
+      if(passwordTest.length < 8){
+        alert("Your password is not strong")
       }
-
-      if (
-        testCapitalLetter == true &&
-        testNumber == true &&
-        testSmallLetter == true &&
-        testSpacialChar == true
-      ) {
-        signUp.classList.add("d-none");
-        signIn.classList.remove("d-none");
-        alert("You are successfully Sign Up");
-      }
-    } else {
-      alert("your password is not match");
+      validateEmpty(passwordTest, "Password")
+      validateNumber(passwordTest, "Password");
+      validateSmallLetter(passwordTest, "Password")
+      validateCapitalLetter(passwordTest, "Password")
+      validateSpacialLetter(passwordTest, "Password")
+    }else{
+      alert('your Password is not same');
     }
   });
 }
-
 if (signInCheckBox) {
   signUpCheckBox.addEventListener("click", function () {
     console.log("event run");
@@ -153,4 +140,46 @@ if (signInCheckBox) {
       signUpConfirmPassword.setAttribute("type", "password");
     }
   });
+}
+
+function validateEmpty(element, inputName){
+  if(!element){
+    alert(`${inputName} is required `)
+  }
+}
+
+function validateNumber(element, inputName){
+  let validation =  /[0-9]/.test(element);
+  if(validation !== true){
+    alert(`Your ${inputName} is not contain number`)
+  }else{
+    return element = true;
+  }
+}
+
+function validateSmallLetter(element, inputName){
+  let validation =  /[a-z]/.test(element);
+  if(validation !== true){
+    alert(`Your ${inputName} is not contain small letter`)
+  }else{
+    return element = true;
+  }
+}
+
+function validateCapitalLetter(element, inputName){
+  let validation =  /[A-Z]/.test(element);
+  if(validation !== true){
+    alert(`Your ${inputName} is not contain Capital letter`)
+  }else{
+    return element = true;
+  }
+}
+
+function validateSpacialLetter(element, inputName){
+  let validation =  /[?=.*@<>$&#]/.test(element);
+  if(validation !== true){
+    alert(`Your ${inputName} is not contain Spaical letter`)
+  }else{
+    return element = true;
+  }
 }
